@@ -31,7 +31,7 @@
     // ### The main settings object
     // Where all the default settings are stored. Each of these variables and methods can be overwritten by the user-provided `options` object.
     settings: {
-      autoplay: true,
+      autoplay: false,
       loop: false,
       preload: true,
       imageLocation: path + 'player-graphics.gif',
@@ -67,7 +67,8 @@
             <div class="progress"></div> \
             <div class="loaded"></div> \
           </div> \
-            <em class="played">00:00</em>/<strong class="duration">00:00</strong> \ 
+          <div class="time"> \
+            <em class="played">00:00</em>/<strong class="duration">00:00</strong> \
           </div> \
           <div class="error-message"></div>',
         playPauseClass: 'play-pause',
@@ -88,8 +89,8 @@
         .audiojs { width: 460px; height: 36px; background: #1C1C1B; overflow: hidden; font-family: monospace; font-size: 12px; \
           background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1C1C1B), color-stop(0.5, #1C1C1B), color-stop(0.51, #1C1C1B), color-stop(1, #1C1C1B)); \
           background-image: -moz-linear-gradient(center top, #1C1C1B 0%, #1C1C1B 50%, #1C1C1B 51%, #1C1C1B 100%); \
-          -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0); -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0); \
-          -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0); box-shadow: 1px 1px 8px rgba(0, 0, 0, 0); } \
+          -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); \
+          -o-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); } \
         .audiojs .play-pause { width: 25px; height: 40px; padding: 4px 6px; margin: 0px; float: left; overflow: hidden; border-right: 1px solid #000; } \
         .audiojs p { display: none; width: 25px; height: 40px; margin: 0px; cursor: pointer; } \
         .audiojs .play { display: block; } \
@@ -101,7 +102,7 @@
           background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.5, #333), color-stop(0.51, #222), color-stop(1, #222)); \
           background-image: -moz-linear-gradient(center top, #222 0%, #333 50%, #222 51%, #222 100%); } \
         .audiojs .time { float: left; height: 36px; line-height: 36px; margin: 0px 0px 0px 6px; padding: 0px 6px 0px 12px; border-left: 1px solid #000; color: #ddd; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); } \
-        .audiojs .time em { padding: 0px 2px 0px 0px; color: #f9f9f9; font-style: normal; } \
+        .audiojs .time em { padding: 0px 2px 0px 0px; color: #ffffff; font-style: normal; } \
         .audiojs .time strong { padding: 0px 0px 0px 2px; font-weight: normal; } \
         .audiojs .error-message { float: left; display: none; margin: 0px 10px; height: 36px; width: 400px; overflow: hidden; line-height: 36px; white-space: nowrap; color: #fff; \
           text-overflow: ellipsis; -o-text-overflow: ellipsis; -icab-text-overflow: ellipsis; -khtml-text-overflow: ellipsis; -moz-text-overflow: ellipsis; -webkit-text-overflow: ellipsis; } \
