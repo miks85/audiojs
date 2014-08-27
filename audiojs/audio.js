@@ -86,11 +86,11 @@
       // The css used by the default player. This is is dynamically injected into a `<style>` tag in the top of the head.
       css: '\
         .audiojs audio { position: absolute; left: -1px; } \
-        .audiojs { width: 460px; height: 36px; background: #1C1C1B; overflow: hidden; font-family: monospace; font-size: 12px; \
-          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444)); \
-          background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%); \
-          -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); \
-          -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); } \
+        .audiojs { width: 300px; height: 36px; background: #1C1C1B; overflow: hidden; font-family: monospace; font-size: 12px; \
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1C1C1B), color-stop(0.5, #1C1C1B), color-stop(0.51, #1C1C1B), color-stop(1, #1C1C1B)); \
+          background-image: -moz-linear-gradient(center top, #1C1C1B 0%, #1C1C1B 50%, #1C1C1B 51%, #1C1C1B 100%); \
+          -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0); -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0); \
+          -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0); box-shadow: 1px 1px 8px rgba(0, 0, 0, 0); } \
         .audiojs .play-pause { width: 25px; height: 40px; padding: 4px 6px; margin: 0px; float: left; overflow: hidden; border-right: 1px solid #000; } \
         .audiojs p { display: none; width: 25px; height: 40px; margin: 0px; cursor: pointer; } \
         .audiojs .play { display: block; } \
